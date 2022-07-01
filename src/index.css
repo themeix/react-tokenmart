@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
 @import "./assets/css/custom.css";
 @import "./assets/css/tailwind.css";
 @import "./assets/css/typofix.css";
@@ -66,4 +68,8 @@ body {
 }
 .rounded {
   border-radius: 8px !important;
+}
+.rounded-l {
+  border-top-left-radius: 8px!important;
+  border-bottom-left-radius: 8px!important;
 }
