@@ -17,7 +17,7 @@ const Dropdown = ({ dropdown, active, setactive }) => {
         {list.map((listitem, index) => (
           <li
             // style={{display:activeItem==li}}
-            className={`relative dropdown  ${
+            className={`relative dropdown lg:mr-4 ${
               activeItem == listitem.id && "active"
             }`}
             key={index}
@@ -31,7 +31,11 @@ const Dropdown = ({ dropdown, active, setactive }) => {
               {listitem.title}
               {listitem.submenu.length > 0 && (
                 <span
-                  onClick={() => setactiveItem(activeItem==listitem.id ? null : listitem.id)}
+                  onClick={() =>
+                    setactiveItem(
+                      activeItem == listitem.id ? null : listitem.id
+                    )
+                  }
                   className="leading-5 text-2xl text-center bg-blueGray-100 w-6 h-6 absolute right-2 top-4 block lg:hidden toggle"
                 >
                   {activeItem !== listitem.id ? "+" : "-"}
@@ -59,7 +63,9 @@ const Dropdown = ({ dropdown, active, setactive }) => {
                     {subitem.submenu.length > 0 && (
                       <span
                         onClick={() =>
-                          setactiveSubItem(activeSubItem==subitem.id ? null : subitem.id)
+                          setactiveSubItem(
+                            activeSubItem == subitem.id ? null : subitem.id
+                          )
                         }
                         className="leading-5 text-2xl text-center bg-blueGray-100 w-6 h-6 absolute right-2 top-4 block lg:hidden toggle"
                       >

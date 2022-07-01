@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import FooterV2 from "../../components/Footer/FooterV2";
@@ -6,6 +7,7 @@ import { products } from "./itemdata";
 import ProductItem2 from "./ProductItem2";
 
 const ExploreV2 = () => {
+  const [num, setnum] = useState(8);
 
   return (
     <div>
