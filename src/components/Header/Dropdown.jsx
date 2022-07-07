@@ -30,16 +30,18 @@ const Dropdown = ({ dropdown, active, setactive }) => {
             >
               {listitem.title}
               {listitem.submenu.length > 0 && (
-                <span
-                  onClick={() =>
-                    setactiveItem(
-                      activeItem == listitem.id ? null : listitem.id
-                    )
-                  }
-                  className="leading-5 text-2xl text-center bg-blueGray-100 w-6 h-6 absolute right-2 top-4 block lg:hidden toggle"
-                >
-                  {activeItem !== listitem.id ? "+" : "-"}
-                </span>
+                <a>
+                  <span
+                    onClick={() =>
+                      setactiveItem(
+                        activeItem == listitem.id ? null : listitem.id
+                      )
+                    }
+                    className="leading-5 text-2xl text-center bg-blueGray-100 w-6 h-6 absolute right-2 top-4 block lg:hidden toggle"
+                  >
+                    {activeItem !== listitem.id ? "+" : "-"}
+                  </span>
+                </a>
               )}
             </Link>
             <ul

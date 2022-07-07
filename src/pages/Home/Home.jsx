@@ -2,10 +2,14 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Footer from "../../components/Footer/Footer";
 import Header from "../../components/Header/Header";
+import { blogs } from "../Blog/blogdata";
 import { products } from "../Explore/itemdata";
-import ProductItem from "../Explore/ProductItem";
+import ProductItem2 from "../Explore/ProductItem2";
+import BlogCard from "../Blog/BlogCard";
+import { useState } from "react";
 
 const Home = () => {
+  const [blogCount, setblogCount] = useState(3);
   return (
     <>
       <div>
@@ -218,12 +222,8 @@ const Home = () => {
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
               {products.map((product, index) => (
-                <ProductItem key={index} item={product} />
+                <ProductItem2 key={index} item={product} />
               ))}
-            
-             
-            
-          
             </div>
           </div>
         </section>
@@ -917,183 +917,24 @@ const Home = () => {
               </Link>
             </div>
             <div className="blog-infinite grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-8">
-              <div
-                className="blog-box flex justify-between flex-col rounded transition duration-500 hover:shadow-lg"
-                data-aos="fade-up"
-              >
-                <div className="content-top">
-                  <div className="blog-image md:h-64 relative rounded overflow-hidden mb-6">
-                    <img
-                      className="w-full md:h-64 object-cover"
-                      src="assets/images/blog/1.jpg"
-                      alt="title"
-                    />
-                  </div>
-                  <div className="blog-content px-6">
-                    <h3 className="font-display text-xl text-blueGray-900 font-bold transition hover:text-indigo-500">
-                      <Link to="/single">
-                        Mindfulness Activities for Kids &amp; Toddlers with NFT
-                      </Link>
-                    </h3>
-                    <div className="flex flex-wrap font-body text-sm text-blueGray-600 mt-3 mb-5">
-                      <p className="flex items-center mr-4">
-                        <img
-                          className="w-4 h-4 inline-block mr-1"
-                          src="assets/images/date-icon.svg"
-                          alt="title"
-                        />{" "}
-                        02 Feb 2022
-                      </p>
-                      <p className="flex items-center">
-                        <img
-                          className="w-4 h-4 inline-block mr-1"
-                          src="assets/images/comment-icon.svg"
-                          alt="title"
-                        />{" "}
-                        27 Comments
-                      </p>
-                    </div>
-                    <p className="font-body text-blueGray-600 mb-5">
-                      Poverty of in the better in little. Did out held be
-                      entered it small...
-                    </p>
-                  </div>
-                </div>
-                <div className="content-bottom px-6 pb-6">
-                  <Link
-                    className="readmore-btn font-body font-normal text-indigo-500 transition duration-500 hover:text-indigo-500 underline-hover"
-                    to="/single"
-                  >
-                    Read More
-                    <img
-                      className=" inline-block w-3 ml-2 mb-1"
-                      src="assets/images/readmore-icon.svg"
-                      alt="Post Title Here"
-                    />
-                  </Link>
-                </div>
-              </div>
-              <div
-                className="blog-box flex justify-between flex-col rounded transition duration-500 hover:shadow-lg"
-                data-aos="fade-up"
-              >
-                <div className="content-top">
-                  <div className="blog-image md:h-64 relative rounded overflow-hidden mb-6">
-                    <img
-                      className="w-full md:h-64 object-cover"
-                      src="assets/images/blog/2.jpg"
-                      alt="title"
-                    />
-                  </div>
-                  <div className="blog-content px-6">
-                    <h3 className="font-display text-xl text-blueGray-900 font-bold transition hover:text-indigo-500">
-                      <Link to="/single">
-                        Save Thousands Of Lives Through This NFT
-                      </Link>
-                    </h3>
-                    <div className="flex flex-wrap font-body text-sm text-blueGray-600 mt-3 mb-5">
-                      <p className="flex items-center mr-4">
-                        <img
-                          className="w-4 h-4 inline-block mr-1"
-                          src="assets/images/date-icon.svg"
-                          alt="title"
-                        />{" "}
-                        02 Feb 2022
-                      </p>
-                      <p className="flex items-center">
-                        <img
-                          className="w-4 h-4 inline-block mr-1"
-                          src="assets/images/comment-icon.svg"
-                          alt="title"
-                        />{" "}
-                        13 Comments
-                      </p>
-                    </div>
-                    <p className="font-body text-blueGray-600 mb-5">
-                      Staple was it myself. The both writing and area century...
-                    </p>
-                  </div>
-                </div>
-                <div className="content-bottom px-6 pb-6">
-                  <Link
-                    className="readmore-btn font-body font-normal text-indigo-500 transition duration-500 hover:text-indigo-500 underline-hover"
-                    to="/single"
-                  >
-                    Read More
-                    <img
-                      className=" inline-block w-3 ml-2 mb-1"
-                      src="assets/images/readmore-icon.svg"
-                      alt="Post Title Here"
-                    />
-                  </Link>
-                </div>
-              </div>
-              <div
-                className="blog-box flex justify-between flex-col rounded transition duration-500 hover:shadow-lg"
-                data-aos="fade-up"
-              >
-                <div className="content-top">
-                  <div className="blog-image md:h-64 relative rounded overflow-hidden mb-6">
-                    <img
-                      className="w-full md:h-64 object-cover"
-                      src="assets/images/blog/3.jpg"
-                      alt="title"
-                    />
-                  </div>
-                  <div className="blog-content px-6">
-                    <h3 className="font-display text-xl text-blueGray-900 font-bold transition hover:text-indigo-500">
-                      <Link to="/single">
-                        Honoring Black History Month with Toddlers
-                      </Link>
-                    </h3>
-                    <div className="flex flex-wrap font-body text-sm text-blueGray-600 mt-3 mb-5">
-                      <p className="flex items-center mr-4">
-                        <img
-                          className="w-4 h-4 inline-block mr-1"
-                          src="assets/images/date-icon.svg"
-                          alt="title"
-                        />{" "}
-                        02 Feb 2022
-                      </p>
-                      <p className="flex items-center">
-                        <img
-                          className="w-4 h-4 inline-block mr-1"
-                          src="assets/images/comment-icon.svg"
-                          alt="title"
-                        />{" "}
-                        17 Comments
-                      </p>
-                    </div>
-                    <p className="font-body text-blueGray-600 mb-5">
-                      At but physics sofa a explorations are trusted curiously
-                      ...
-                    </p>
-                  </div>
-                </div>
-                <div className="content-bottom px-6 pb-6">
-                  <Link
-                    className="readmore-btn font-body font-normal text-indigo-500 transition duration-500 hover:text-indigo-500 underline-hover"
-                    to="/single"
-                  >
-                    Read More
-                    <img
-                      className=" inline-block w-3 ml-2 mb-1"
-                      src="assets/images/readmore-icon.svg"
-                      alt="Post Title Here"
-                    />
-                  </Link>
-                </div>
-              </div>
+              {blogs.slice(0, blogCount).map((item, index) => (
+                <BlogCard key={index} item={item} />
+              ))}
             </div>
             <div className="flex justify-center mt-8 lg:mt-14">
-              <button className="btn load-more-btn flex items-center text-white font-body font-bold rounded px-6 py-4 transition-all duration-500 bg-gradient-to-tl from-indigo-500 via-purple-500 to-indigo-500 bg-size-200 bg-pos-0 hover:bg-pos-100">
-                Load More{" "}
-                <img
-                  className="w-4 h-4 flex-shrink-0 animate-spin ml-2"
-                  src="assets/images/spinner-icon.svg"
-                  alt="title"
-                />
-              </button>
+              {blogCount === 3 && (
+                <button
+                  onClick={() => setblogCount(6)}
+                  className="btn load-more-btn flex items-center text-white font-body font-bold rounded px-6 py-4 transition-all duration-500 bg-gradient-to-tl from-indigo-500 via-purple-500 to-indigo-500 bg-size-200 bg-pos-0 hover:bg-pos-100"
+                >
+                  Load More{" "}
+                  <img
+                    className="w-4 h-4 flex-shrink-0 animate-spin ml-2"
+                    src="assets/images/spinner-icon.svg"
+                    alt="title"
+                  />
+                </button>
+              )}
             </div>
           </div>
         </section>

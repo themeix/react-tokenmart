@@ -25,7 +25,7 @@ const WalletItem = ({ modalOpen, setmodalOpen, item }) => {
         <Link
           onClick={() => setmodalOpen(!modalOpen)}
           to="#popup-modal"
-          className="popup-modal btn inline-block bg-gradient-to-r from-purple-500 to-indigo-500 text-white font-body font-medium rounded py-3 px-6 transition duration-500 hover:from-indigo-500 hover:to-purple"
+          className="popup-modal btn inline-block bg-gradient-to-r from-purple-500 to-indigo-500 text-white font-body font-medium rounded py-3 px-6 transition duration-500 hover:from-indigo-500 hover:to-purple-500"
         >
           Connect{" "}
           <img

@@ -13,13 +13,13 @@ const ExploreV1 = () => {
   const [reload, setreload] = useState(false);
   const [num, setnum] = useState(8);
 
-  useEffect(() => {
-    if (window.location.search !== "?reloaded") {
-      console.log(window.location.search);
-      window.location.reload();
-      window.location.search = "reloaded";
-    }
-  }, []);
+  // useEffect(() => {
+  //   if (window.location.search !== "?reloaded") {
+  //     console.log(window.location.search);
+  //     window.location.reload();
+  //     window.location.search = "reloaded";
+  //   }
+  // }, []);
 
   return (
     <div>
