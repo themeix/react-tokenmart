@@ -1,12 +1,15 @@
 import React from "react";
+import { useState } from "react";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import FooterV2 from "../../components/Footer/FooterV2";
 import HeaderV2 from "../../components/Header/HeaderV2";
+import Loadmore from "../../components/Loadmore";
 import Follower from "./Follower";
 import { followers } from "./followerdata";
 
 const CreatorFollower = () => {
+  const [num, setnum] = useState(10);
   return (
     <div>
       <Helmet>
@@ -151,19 +154,14 @@ const CreatorFollower = () => {
             </Link>
           </div>
           <div className="activity-infinite grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-8">
-            {followers.map((follower, index) => (
+            {followers.slice(0,num).map((follower, index) => (
               <Follower key={index} item={follower} />
             ))}
           </div>
           <div className="flex justify-center mt-8 lg:mt-14">
-            <button className="btn load-more-btn flex items-center text-white font-body font-bold rounded px-6 py-4 transition-all duration-500 bg-gradient-to-tl from-indigo-500 via-purple-500 to-indigo-500 bg-size-200 bg-pos-0 hover:bg-pos-100">
-              Load More{" "}
-              <img
-                className="w-4 h-4 flex-shrink-0 animate-spin ml-2"
-                src="assets/images/spinner-icon.svg"
-                alt="title"
-              />
-            </button>
+            {num === 10 &&    <Loadmore onClick={()=>setnum(18)} />}
+        
+    
           </div>
         </div>
       </section>

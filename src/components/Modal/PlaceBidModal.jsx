@@ -1,12 +1,9 @@
-import React, { useEffect } from "react";
-import Modal from "react-modal";
+import React from "react";
 import { OuterClick } from "react-outer-click";
-import { Fade, Zoom } from "react-reveal";
-import ReactDOM from "react-dom";
 import { AiOutlineClose } from "react-icons/ai";
 
-const PlaceBidModal = ({ modalIsOpen, afterOpenModal, setmodalOpen }) => {
-  const modalRoot = document.getElementById("portal");
+const PlaceBidModal = ({ modalIsOpen, setmodalOpen }) => {
+  
 
   return (
     <>
@@ -79,7 +76,7 @@ const PlaceBidModal = ({ modalIsOpen, afterOpenModal, setmodalOpen }) => {
                     Don't have enough crypto?
                   </p>
                   <p className="font-display text-xl text-indigo-500 font-medium mr-6">
-                    <a href="#">Buy Crypto/Deposit!</a>
+                    <a href="/">Buy Crypto/Deposit!</a>
                   </p>
                 </div>
               </div>
@@ -93,7 +90,7 @@ const PlaceBidModal = ({ modalIsOpen, afterOpenModal, setmodalOpen }) => {
               </div>
               <button
                 type="submit"
-                className="btn block w-full bg-indigo-500 text-white text-center font-body font-bold rounded py-4 px-7 transition duration-500 hover:bg-blueGray-900"
+                className="btn block w-full  text-white text-center font-body font-bold rounded py-4 px-7 transition duration-500 hover:bg-blueGray-900 bg-indigo-500"
               >
                 Placed a bid
               </button>

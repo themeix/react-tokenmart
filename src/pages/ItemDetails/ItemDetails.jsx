@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { Helmet } from "react-helmet";
 import FooterV2 from "../../components/Footer/FooterV2";
 import Header from "../../components/Header/Header";
-import ConnectWalletModal from "../../components/Modal/ConnectWalletModal";
 import PlaceBidModal from "../../components/Modal/PlaceBidModal";
+import Timer9 from "../../components/Timer/Timer9";
 import Tabs from "./Tabs";
 
 const ItemDetails = () => {
@@ -73,7 +73,7 @@ const ItemDetails = () => {
                 data-aos="fade-up"
               >
                 Auctions ends in{" "}
-                <span className="font-display countdown-time9 text-blueGray-900 font-bold" />
+               <Timer9/>
               </p>
               <div
                 className="border border-blueGray-300 rounded p-6"

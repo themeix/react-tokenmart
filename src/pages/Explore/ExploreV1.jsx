@@ -13,7 +13,7 @@ require("jquery-nice-select");
 const ExploreV1 = () => {
   const selectRef = useRef();
   const selectRef2 = useRef();
-  const [num, setnum] = useState(8);
+  const [num, setnum] = useState(12);
 
   useEffect(() => {
     $(selectRef.current).niceSelect();
@@ -103,7 +103,7 @@ const ExploreV1 = () => {
             ))}
           </div>
           <div className="flex justify-center mt-8 lg:mt-14">
-            {num == 8 && (
+            {num === 12 && (
               <button
                 onClick={() => setnum(20)}
                 className="btn load-more-btn flex items-center text-white font-body font-bold rounded px-6 py-4 transition-all duration-500 bg-gradient-to-tl from-indigo-500 via-purple-500 to-indigo-500 bg-size-200 bg-pos-0 hover:bg-pos-100"

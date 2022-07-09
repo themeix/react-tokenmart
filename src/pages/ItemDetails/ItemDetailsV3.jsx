@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet";
 import FooterV2 from "../../components/Footer/FooterV2";
 import Header from "../../components/Header/Header";
 import ByenowModal from "../../components/Modal/ByenowModal";
+import Timer9 from "../../components/Timer/Timer9";
 import Tabs from "./Tabs";
 
 const ItemDetailsV3 = () => {
@@ -71,7 +72,7 @@ const ItemDetailsV3 = () => {
                 data-aos="fade-up"
               >
                 Auctions ends in{" "}
-                <span className="font-display countdown-time9 text-blueGray-900 font-bold" />
+                <Timer9/>
               </p>
               <div
                 className="border border-blueGray-300 rounded p-6"

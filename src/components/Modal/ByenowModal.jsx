@@ -1,25 +1,9 @@
 import React from "react";
 import { AiOutlineClose } from "react-icons/ai";
-import ReactModal from "react-modal";
 import { OuterClick } from "react-outer-click";
 
 const ByenowModal = ({ modalOpen, setmodalOpen }) => {
-  const customStyles = {
-    content: {
-      top: "50%",
-      left: "50%",
-      right: "auto",
-      bottom: "auto",
-      marginRight: "-50%",
-      transform: "translate(-50%, -50%)",
-      padding: "0",
-      width: "auto",
-      height: "max-content",
-      borderRadius: "10px",
-      backgroundColor: "white",
-    },
-  };
-  console.log(modalOpen);
+ 
   return (
     <>
       {modalOpen && (

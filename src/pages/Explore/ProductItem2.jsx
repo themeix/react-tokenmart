@@ -5,7 +5,7 @@ import Timer2 from '../../components/Timer/Timer2'
 const ProductItem2 = ({item}) => {
   return (
     <div
-    className="product-box bg-white flex justify-between flex-col shadow rounded overflow-hidden transition duration-500 hover:shadow-lg"
+    className="product-box bg-white flex justify-between flex-col  rounded overflow-hidden transition duration-500 hover:shadow-lg"
     data-aos="fade-up"
   >
     <div className="product-top">

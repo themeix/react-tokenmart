@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import FooterV2 from "../../components/Footer/FooterV2";
@@ -7,7 +6,6 @@ import { products } from "./itemdata";
 import ProductItem2 from "./ProductItem2";
 
 const ExploreV2 = () => {
-  const [num, setnum] = useState(8);
 
   return (
     <div>
@@ -61,7 +59,7 @@ const ExploreV2 = () => {
       <section className="product-section relative mb-20 lg:mb-32">
         <div className="container mx-auto relative px-4 z-10">
           <div className="product-infinite grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-            {products.map((product, index) => (
+            {products.slice(0,12).map((product, index) => (
               <ProductItem2 key={index} item={product} />
             ))}
           </div>
