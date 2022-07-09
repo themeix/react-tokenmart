@@ -20,14 +20,12 @@ const ExploreV1 = () => {
     $(selectRef2.current).niceSelect();
   }, []);
 
- 
-
   return (
     <div>
-         <Helmet>
-                <meta charSet="utf-8" />
-                <title>Explore V1 || Tokenmart - Largest online marketplace</title>
-            </Helmet>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Explore V1 || Tokenmart - Largest online marketplace</title>
+      </Helmet>
       <Header />
       {/*  ====================== Hero Section =============================  */}
       <section className="hero-section relative mt-2 pt-32 pb-20 lg:pt-48 lg:pb-32">
@@ -76,6 +74,7 @@ const ExploreV1 = () => {
           <div className="flex justify-between mb-8 lg:mb-14">
             <div className="flex items-center pr-6">
               <select
+              style={{display:"none"}}
                 ref={selectRef}
                 className="multiple-select2 block lg:hidden text-blueGray-600"
               >
