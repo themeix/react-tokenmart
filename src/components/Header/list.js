@@ -4,9 +4,9 @@ export const list = [
     title: "Home",
     link: "/",
     submenu: [
-      { id: "1", title: "Home V1", link: "/", submenu: [] },
-      { id: "1", title: "Home V2", link: "/home2", submenu: [] },
-      { id: "1", title: "Home V3", link: "/home3", submenu: [] },
+      { id: "1", title: "Home V1", link: "/", parentId:"1",  submenu: [] },
+      { id: "1", title: "Home V2", link: "/home2",parentId:"1", submenu: [] },
+      { id: "1", title: "Home V3", link: "/home3",parentId:"1", submenu: [] },
     ],
   },
   {
@@ -14,12 +14,12 @@ export const list = [
     title: "Explore",
     link: "/explore",
     submenu: [
-      { id: "1", title: "Explore v1", link: "/explore", submenu: [] },
-      { id: "1", title: "Explore v2", link: "/explore2", submenu: [] },
-      { id: "1", title: "Item Details V1", link: "/item-single", submenu: [] },
-      { id: "1", title: "Item Details V2", link: "/item-single2", submenu: [] },
+      { id: "1", title: "Explore v1", parentId:"2",  link: "/explore", submenu: [] },
+      { id: "1", title: "Explore v2",parentId:"2",  link: "/explore2", submenu: [] },
+      { id: "1", title: "Item Details V1", parentId:"2", link: "/item-single", submenu: [] },
+      { id: "1", title: "Item Details V2", parentId:"2", link: "/item-single2", submenu: [] },
       { id: "1", title: "Item Details V3", link: "/item-single3", submenu: [] },
-      { id: "1", title: "Wallet", link: "/wallet", submenu: [] },
+      { id: "1", title: "Wallet", parentId:"2", link: "/wallet", submenu: [] },
     ],
   },
 

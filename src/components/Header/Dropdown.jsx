@@ -45,7 +45,9 @@ const Dropdown = ({ dropdown, active, setactive }) => {
               )}
             </Link>
             <ul
-              className={` lg:block bg-white lg:absolute top-full lg:shadow lg:w-44 transition duration-500 submenu `}
+              className={` ${
+                activeItem == listitem.id ? "" : "hidden"
+              }  lg:block bg-white lg:absolute top-full lg:shadow lg:w-44 transition duration-500 submenu `}
             >
               {listitem.submenu.map((subitem, index) => (
                 <li
@@ -75,11 +77,14 @@ const Dropdown = ({ dropdown, active, setactive }) => {
                       </span>
                     )}
                   </Link>
-                  <ul className="hidden lg:block bg-white lg:absolute top-0 left-full lg:shadow lg:w-44 transition duration-500 submenu">
+                  <ul
+                    className={`${
+                      activeSubItem == subitem.id ? "" : "hidden"
+                    } lg:block bg-white lg:absolute top-0 left-full lg:shadow lg:w-44 transition duration-500 submenu`}
+                  >
                     {subitem.submenu.map((superSubItem, index) => (
-                      <li>
+                      <li key={index}>
                         <Link
-                          key={index}
                           className="py-3 px-4 flex items-center hover:bg-indigo-100 hover:text-indigo-500 transition duration-500"
                           to={superSubItem.link}
                         >
