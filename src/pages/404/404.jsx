@@ -1,10 +1,15 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import FooterV2 from "../../components/Footer/FooterV2";
 import Header from "../../components/Header/Header";
 
 const NotFound = () => {
   return (
     <div>
+      <Helmet>
+                <meta charSet="utf-8" />
+                <title>404 Not Found || Tokenmart - Largest online marketplace</title>
+            </Helmet>
       <Header />
       <div className="blog-section relative lg:mt-80 lg:mb-64">
         <div className="container mx-auto relative px-4 z-10">

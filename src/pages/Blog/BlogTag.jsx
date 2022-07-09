@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import FooterV2 from "../../components/Footer/FooterV2";
 import Header from "../../components/Header/Header";
@@ -10,6 +11,10 @@ const BlogTag = () => {
   const [num, setnum] = useState(9);
   return (
     <div>
+      <Helmet>
+                <meta charSet="utf-8" />
+                <title>Tag -NFT || Tokenmart - Largest online marketplace</title>
+            </Helmet>
       <Header />
       <section className="hero-section relative mt-2 pt-32 pb-20 lg:pt-48 lg:pb-32">
         <div className="container mx-auto relative px-4 z-10">

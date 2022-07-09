@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import Footer from "../../components/Footer/Footer";
 import Header from "../../components/Header/Header";
@@ -11,6 +12,10 @@ import AuctionSlider from "./AuctionSlider";
 const Home3 = () => {
   return (
     <div>
+       <Helmet>
+                <meta charSet="utf-8" />
+                <title>Home V3|| Tokenmart - Largest online marketplace</title>
+            </Helmet>
       <Header />
       {/*  ====================== Hero Section =============================  */}
       <section className="hero-section relative hero-shape pt-40 pb-24 lg:pt-64 lg:pb-56">

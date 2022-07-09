@@ -21,8 +21,7 @@ const Header = () => {
 
   return (
     <header
-      className="header-area absolute w-full top-0 pt-4 pb-10"
-      // style={{ position: scrolled ? "fixed" : "sticky" }}
+      className={`header-area  absolute w-full top-0 pt-4 pb-10 ${scrolled && "header-sticky"}`}
     >
       <div className="container mx-auto relative px-4 z-20">
         <nav className="flex items-center justify-between relative">

@@ -81,46 +81,7 @@ require("jquery-nice-select");
     },
   });
   /* Cursor Js */
-  var cursor = $(".cursor-direction");
-  $(document).mousemove(function (e) {
-    cursor.css({
-      top: e.clientY - cursor.height() / 2,
-      left: e.clientX - cursor.width() / 2,
-    });
-  });
-  $(document)
-    .mouseleave(function () {
-      cursor.css({
-        opacity: "0",
-      });
-    })
-    .mouseenter(function () {
-      cursor.css({
-        opacity: "1",
-      });
-    });
-  $(document)
-    .mousedown(function () {
-      cursor.css({
-        transform: "scale(.2)",
-      });
-    })
-    .mouseup(function () {
-      cursor.css({
-        transform: "scale(1)",
-      });
-    });
-  $("a,button,input")
-    .mouseenter(function () {
-      cursor.css({
-        transform: "scale(3.2)",
-      });
-    })
-    .mouseleave(function () {
-      cursor.css({
-        transform: "scale(1)",
-      });
-    });
+ 
   /*  Append Shop  */
   $(".product-infinite").infiniteScroll({
     path: function () {

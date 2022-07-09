@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import Footer from "../../components/Footer/Footer";
 import FooterV2 from "../../components/Footer/FooterV2";
@@ -14,6 +15,10 @@ import SwiperSlider from "./SwiperSlider";
 const Home2 = () => {
   return (
     <div>
+       <Helmet>
+                <meta charSet="utf-8" />
+                <title>Home V2 || Tokenmart - Largest online marketplace</title>
+            </Helmet>
       <Header />
       {/*  ====================== Hero Section =============================  */}
 

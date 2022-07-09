@@ -8,8 +8,7 @@
 @import "./assets/css/tailwind.css";
 @import "./assets/css/typofix.css";
 @import "./assets/css/vendors.css";
-/* @import "./assets/css/vendors.min.css"; */
-@import "./assets/css/app.min.css";
+/* @import "./assets/css/app.min.css"; */
 
 .bodyShadow {
   background-color: rgba(51, 51, 51, 0.753);
@@ -73,3 +72,8 @@ body {
   border-top-left-radius: 8px!important;
   border-bottom-left-radius: 8px!important;
 }
+.arrow-btn{
+  padding-right: 2.8em!important;
+} 
+
+

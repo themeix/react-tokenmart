@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useEffect } from "react";
+import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import FooterV2 from "../../components/Footer/FooterV2";
 import Header from "../../components/Header/Header";
@@ -11,6 +11,10 @@ const ExploreV2 = () => {
 
   return (
     <div>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Explore V2 || Tokenmart - Largest online marketplace</title>
+      </Helmet>
       <Header />
       {/*  ====================== Hero Section =============================  */}
       <section className="hero-section relative mt-2 pt-32 pb-20 lg:pt-48 lg:pb-32">

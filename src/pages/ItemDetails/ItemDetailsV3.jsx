@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Helmet } from "react-helmet";
 import FooterV2 from "../../components/Footer/FooterV2";
 import Header from "../../components/Header/Header";
 import ByenowModal from "../../components/Modal/ByenowModal";
@@ -8,6 +9,10 @@ const ItemDetailsV3 = () => {
   const [modalOpen, setmodalOpen] = useState(false);
   return (
     <div>
+      <Helmet>
+                <meta charSet="utf-8" />
+                <title>Product Details V3 || Tokenmart - Largest online marketplace</title>
+            </Helmet>
       <Header />
       {/*  ====================== Hero Section =============================  */}
       <section className="hero-section relative mt-2 pt-32 pb-20 lg:pt-48 lg:pb-32">

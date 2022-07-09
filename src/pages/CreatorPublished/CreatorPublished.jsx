@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import FooterV2 from "../../components/Footer/FooterV2";
 import HeaderV2 from "../../components/Header/HeaderV2";
@@ -6,6 +7,10 @@ import HeaderV2 from "../../components/Header/HeaderV2";
 const CreatorPublished = () => {
   return (
     <div>
+      <Helmet>
+                <meta charSet="utf-8" />
+                <title>Creator Published|| Tokenmart - Largest online marketplace</title>
+            </Helmet>
       <HeaderV2 />
 
       {/*  ====================== Hero Section =============================  */}

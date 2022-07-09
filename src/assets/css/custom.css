@@ -392,12 +392,12 @@ html {
   }
    
   .header-sticky { 
-  position:fixed;
+  position:fixed!important;
   left:0;
   top:0;
   right:0;
   z-index:333;
-  padding:10px 0;
+  padding:10px 0!important;
   background-color:#fff;
   border-bottom:1px solid #F1F5F9;
   -webkit-box-shadow:0px 11.3915px 25.4634px rgba(73, 116, 230, 0.04), 0px 6.38599px 14.2746px rgba(0, 0, 0, 0.035), 0px 3.39155px 7.58112px rgba(0, 0, 0, 0.0282725), 0px 1.4113px 3.15467px rgba(185, 202, 248, 0.06);
@@ -618,55 +618,55 @@ html {
   }
   
   .nice-select {
-  height:24px;
-  border:none;
-  font-size:16px;
-  line-height:inherit;
-  font-family:"Open Sans",sans-serif;
+  height:24px!important;
+  border:none!important;
+  font-size:16px!important;
+  line-height:inherit!important;
+  font-family:"Open Sans",sans-serif!important;
   }
   
   .nice-select .list {
   border:0;
-  -webkit-box-shadow:rgba(157,163,177,0.1) 0 4px 12px;
-          box-shadow:rgba(157,163,177,0.1) 0 4px 12px;
+  -webkit-box-shadow:rgba(157,163,177,0.1) 0 4px 12px!important;
+          box-shadow:rgba(157,163,177,0.1) 0 4px 12px!important;
   border-radius:8px;
   }
   
   .multiple-select .list {
-  left:auto;
-  right:0;
-  width:200px;
+  left:auto!important;
+  right:0!important;
+  width:200px!important;
   }
   
   .multiple-select2 .list {
-  right:auto;
-  left:0;
+  right:auto!important;
+  left:0!important;
   }
   
   .nice-select .list li {
-  color:#868E96;
+  color:#868E96!important;
   }
   
   .nice-select::after {
-  border-color:#4974E6;
-  height:8px;
-  width:8px;
-  margin-top:-4px;
+  border-color:#4974E6!important;
+  height:8px!important;
+  width:8px!important;
+  margin-top:-4px!important;
   }
   
   .nice-select .option.focus,.nice-select .option.selected.focus,.nice-select .option:hover {
-  background-color:#D9D9D9;
+  background-color:#D9D9D9!important;
   }
   
   .nice-select .option.selected.focus {
-  color:#4974E6;
+  color:#4974E6!important;
   }
   
   .mfp-close {
   color:#262643;
-  font-size:2.4rem;
-  right:10px;
-  top:10px;
+  font-size:2.4rem!important;
+  right:10px!important;
+  top:10px!important;
   }
   
   .mfp-close:active {
