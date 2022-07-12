@@ -1,16 +1,22 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
-import FooterV2 from "../../components/Footer/FooterV2";
-import Header from "../../components/Header/Header";
+import ScrollToTop from "react-scroll-to-top";
+import FooterV2 from "../../../components/Footer/FooterV2";
+import Header from "../../../components/Header/Header";
+import Categories from "./Categories";
+import CommentForm from "./CommentForm";
+import Popularposts from "./Popularposts";
+import Tags from "./Tags";
 
 const BlogDetails = () => {
   return (
     <div>
+      <ScrollToTop smooth />
       <Helmet>
-                <meta charSet="utf-8" />
-                <title>Blog Details || Tokenmart - Largest online marketplace</title>
-            </Helmet>
+        <meta charSet="utf-8" />
+        <title>Blog Details || Tokenmart - Largest online marketplace</title>
+      </Helmet>
       <Header />
       <section className="hero-section relative mt-2 pt-32 pb-20 lg:pt-48 lg:pb-32">
         <div className="container mx-auto relative px-4 z-10">
@@ -23,7 +29,6 @@ const BlogDetails = () => {
                 className="transition duration-500 hover:text-indigo-500 underline-hover"
                 to="/index"
               >
-                {" "}
                 Home
               </Link>
             </li>
@@ -58,7 +63,6 @@ const BlogDetails = () => {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
             <div className="lg:col-span-7 xl:col-span-8">
               <figure>
-                {" "}
                 <img
                   className="w-full rounded"
                   src="assets/images/featured-image.jpg"
@@ -139,7 +143,9 @@ const BlogDetails = () => {
                   listening…there’s nothing like that{" "}
                   <cite>
                     —{" "}
-                    <Link to="/http://en.wikipedia.org/wiki/HAL_9000">HAL 9000</Link>
+                    <Link to="/http://en.wikipedia.org/wiki/HAL_9000">
+                      HAL 9000
+                    </Link>
                   </cite>
                 </blockquote>
                 <p>
@@ -454,14 +460,14 @@ const BlogDetails = () => {
               <div className="entry-navigation lg:flex items-center justify-between mb-8 lg:mb-10">
                 <div className="lg:text-left lg:max-w-sm my-4 lg:mr-6">
                   <h3 className="font-display text-xl text-blueGray-900 font-bold transition duration-500 hover:text-indigo-500">
-                    <Link to="/single">
+                    <Link to="/ Liki Trike – A Compact Trike with the Big Benefits">
                       Liki Trike – A Compact Trike with the Big Benefits
                     </Link>
                   </h3>
                   <p className="mt-4">
                     <Link
                       className="readmore-btn font-display text-sm text-blueGray-600 transition duration-500 hover:text-indigo-500 underline-hover mt-2"
-                      to="/single"
+                      to="/  Liki Trike – A Compact Trike with the Big Benefits"
                     >
                       <img
                         className="grayscale inline-block -rotate-180 w-4 mr-2"
@@ -474,7 +480,8 @@ const BlogDetails = () => {
                 </div>
                 <div className="lg:text-right lg:max-w-sm my-4 lg:ml-6">
                   <h3 className="font-display text-xl text-blueGray-900 font-bold transition duration-500 hover:text-indigo-500">
-                    <Link to="/single">
+                    <Link to="/      The Revolutionary Functionality of the Doona Car Seat
+                      &amp; Stroller">
                       The Revolutionary Functionality of the Doona Car Seat
                       &amp; Stroller
                     </Link>
@@ -482,7 +489,8 @@ const BlogDetails = () => {
                   <p className="mt-4">
                     <Link
                       className="readmore-btn font-display text-sm text-blueGray-600 transition duration-500 hover:text-indigo-500 underline-hover mt-2"
-                      to="/single"
+                      to="/ The Revolutionary Functionality of the Doona Car Seat
+                      &amp; Stroller"
                     >
                       {" "}
                       Next Post{" "}
@@ -495,48 +503,7 @@ const BlogDetails = () => {
                   </p>
                 </div>
               </div>
-              <form
-                className="lg:grid md:grid-cols-2 gap-x-4"
-                data-aos="fade-up"
-              >
-                <div className="col-span-1 mb-4">
-                  <input
-                    className="border border-blueGray-300 rounded w-full px-4 py-3 font-body text-blueGray-600 placeholder-blueGray-600 transition duration-500 focus:shadow-lg focus:border-indigo-500 focus:outline-none"
-                    type="text"
-                    placeholder="Name..."
-                  />
-                </div>
-                <div className="col-span-1 mb-4">
-                  <input
-                    className="border border-blueGray-300 rounded w-full px-4 py-3 font-body text-blueGray-600 placeholder-blueGray-600 transition duration-500 focus:shadow-lg focus:border-indigo-500 focus:outline-none"
-                    type="text"
-                    placeholder="Email"
-                  />
-                </div>
-                <div className="col-span-2 mb-4">
-                  <input
-                    className="border border-blueGray-300 rounded w-full px-4 py-3 font-body text-blueGray-600 placeholder-blueGray-600 transition duration-500 focus:shadow-lg focus:border-indigo-500 focus:outline-none"
-                    type="text"
-                    placeholder="Subject"
-                  />
-                </div>
-                <div className="col-span-2 mb-4">
-                  <textarea
-                    rows={4}
-                    className="border border-blueGray-300 rounded w-full px-4 py-3 font-body text-blueGray-600 placeholder-blueGray-600 transition duration-500 focus:shadow-lg focus:border-indigo-500 focus:outline-none"
-                    placeholder="Comment"
-                    defaultValue={""}
-                  />
-                </div>
-                <div>
-                  <button
-                    type="submit"
-                    className="btn inline-block text-white font-body font-medium rounded py-3 px-6 transition-all duration-500 bg-gradient-to-tl from-indigo-500 via-purple-500 to-indigo-500 bg-size-200 bg-pos-0 hover:bg-pos-100"
-                  >
-                    Add Comment
-                  </button>
-                </div>
-              </form>
+              <CommentForm />
             </div>
             <div className="lg:col-span-5 xl:col-span-4">
               <div
@@ -557,7 +524,6 @@ const BlogDetails = () => {
                       type="submit"
                       className="block absolute bottom-3 right-4"
                     >
-                      {" "}
                       <img
                         className="w-5 h-5 inline-block ml-2 mb-1"
                         src="assets/images/search-icon2.svg"
@@ -567,185 +533,9 @@ const BlogDetails = () => {
                   </div>
                 </form>
               </div>
-              <div
-                className="bg-white rounded border border-blueGray-300 transition duration-500 hover:shadow-lg px-6 py-8 mb-14"
-                data-aos="fade-up"
-              >
-                <h3 className="font-display text-3xl text-blueGray-900 font-bold mb-6">
-                  Categories{" "}
-                </h3>
-                <div className="block">
-                  <Link
-                    to="/category"
-                    className="flex justify-between border border-blueGray-300 hover:border-indigo-500 text-blueGray-600 hover:text-white font-body rounded py-3 px-4 mb-4 transition duration-500 hover:bg-indigo-500"
-                  >
-                    <span>Creator</span> <span>24</span>
-                  </Link>
-                  <Link
-                    to="/category"
-                    className="flex justify-between border border-blueGray-300 hover:border-indigo-500 text-blueGray-600 hover:text-white font-body rounded py-3 px-4 mb-4 transition duration-500 hover:bg-indigo-500"
-                  >
-                    <span>Auction</span> <span>20</span>
-                  </Link>
-                  <Link
-                    to="/category"
-                    className="flex justify-between border border-blueGray-300 hover:border-indigo-500 text-blueGray-600 hover:text-white font-body rounded py-3 px-4 mb-4 transition duration-500 hover:bg-indigo-500"
-                  >
-                    <span>Marketplace</span> <span>17</span>
-                  </Link>
-                  <Link
-                    to="/category"
-                    className="flex justify-between border border-blueGray-300 hover:border-indigo-500 text-blueGray-600 hover:text-white font-body rounded py-3 px-4 mb-4 transition duration-500 hover:bg-indigo-500"
-                  >
-                    <span>Sports</span> <span>13</span>
-                  </Link>
-                  <Link
-                    to="/category"
-                    className="flex justify-between border border-blueGray-300 hover:border-indigo-500 text-blueGray-600 hover:text-white font-body rounded py-3 px-4 mb-4 transition duration-500 hover:bg-indigo-500"
-                  >
-                    <span>Outing</span> <span>11</span>
-                  </Link>
-                </div>
-              </div>
-              <div
-                className="bg-white rounded border border-blueGray-300 transition duration-500 hover:shadow-lg px-6 py-8 mb-14"
-                data-aos="fade-up"
-              >
-                <h3 className="font-display text-3xl text-blueGray-900 font-bold mb-3">
-                  Tags{" "}
-                </h3>
-                <div className="flex flex-wrap">
-                  <Link
-                    to="/tag"
-                    className="btn block border border-blueGray-300 hover:border-indigo-500 text-blueGray-600 hover:text-white font-body rounded py-3 px-5 mr-4 mt-4 transition duration-500 hover:bg-indigo-500"
-                  >
-                    Paid Marketing
-                  </Link>
-                  <Link
-                    to="/tag"
-                    className="btn block border border-blueGray-300 hover:border-indigo-500 text-blueGray-600 hover:text-white font-body rounded py-3 px-5 mr-4 mt-4 transition duration-500 hover:bg-indigo-500"
-                  >
-                    Digital Marketing
-                  </Link>
-                  <Link
-                    to="/tag"
-                    className="btn block border border-blueGray-300 hover:border-purple-500 text-blueGray-600 hover:text-white font-body rounded py-3 px-5 mr-4 mt-4 transition duration-500 hover:bg-purple"
-                  >
-                    Blues
-                  </Link>
-                  <Link
-                    to="/tag"
-                    className="btn block border border-blueGray-300 hover:border-indigo-500 text-blueGray-600 hover:text-white font-body rounded py-3 px-5 mr-4 mt-4 transition duration-500 hover:bg-indigo-500"
-                  >
-                    COVID
-                  </Link>
-                  <Link
-                    to="/tag"
-                    className="btn block border border-blueGray-300 hover:border-purple-500 text-blueGray-600 hover:text-white font-body rounded py-3 px-5 mr-4 mt-4 transition duration-500 hover:bg-purple"
-                  >
-                    Web Design
-                  </Link>
-                  <Link
-                    to="/tag"
-                    className="btn block border border-blueGray-300 hover:border-indigo-500 text-blueGray-600 hover:text-white font-body rounded py-3 px-5 mr-4 mt-4 transition duration-500 hover:bg-indigo-500"
-                  >
-                    Content Marketing
-                  </Link>
-                </div>
-              </div>
-              <div
-                className="bg-white rounded border border-blueGray-300 transition duration-500 hover:shadow-lg px-6 py-8 mb-14"
-                data-aos="fade-up"
-              >
-                <h3 className="font-display text-3xl text-blueGray-900 font-bold mb-6">
-                  Popular Posts{" "}
-                </h3>
-                <div className="flex items-center border-b border-blueGray-300 pb-4 mb-4">
-                  <img
-                    className="w-24 h-24 rounded object-cover flex-shrink-0"
-                    src="assets/images/blog/14.jpg"
-                    alt="title"
-                  />
-                  <div className="pl-4">
-                    <h6 className="font-display text-blueGray-900 font-bold transition duration-500 hover:text-indigo-500">
-                      <Link to="/single">
-                        Save Thousands Of Lives com This NFT
-                      </Link>
-                    </h6>
-                    <p className="font-body text-sm text-blueGray-600 mt-2">
-                      22 July, 2021
-                    </p>
-                  </div>
-                </div>
-                <div className="flex items-center border-b border-blueGray-300 pb-4 mb-4">
-                  <img
-                    className="w-24 h-24 rounded object-cover flex-shrink-0"
-                    src="assets/images/blog/15.jpg"
-                    alt="title"
-                  />
-                  <div className="pl-4">
-                    <h6 className="font-display text-blueGray-900 font-bold transition duration-500 hover:text-indigo-500">
-                      <Link to="/single">
-                        Honoring Black History Month with Toddlers
-                      </Link>
-                    </h6>
-                    <p className="font-body text-sm text-blueGray-600 mt-2">
-                      22 July, 2021
-                    </p>
-                  </div>
-                </div>
-                <div className="flex items-center border-b border-blueGray-300 pb-4 mb-4">
-                  <img
-                    className="w-24 h-24 rounded object-cover flex-shrink-0"
-                    src="assets/images/blog/16.jpg"
-                    alt="title"
-                  />
-                  <div className="pl-4">
-                    <h6 className="font-display text-blueGray-900 font-bold transition duration-500 hover:text-indigo-500">
-                      <Link to="/single">
-                        NFT Market – A Compact Trike with the Big Benefits
-                      </Link>
-                    </h6>
-                    <p className="font-body text-sm text-blueGray-600 mt-2">
-                      22 July, 2021
-                    </p>
-                  </div>
-                </div>
-                <div className="flex items-center border-b border-blueGray-300 pb-4 mb-4">
-                  <img
-                    className="w-24 h-24 rounded object-cover flex-shrink-0"
-                    src="assets/images/blog/17.jpg"
-                    alt="title"
-                  />
-                  <div className="pl-4">
-                    <h6 className="font-display text-blueGray-900 font-bold transition duration-500 hover:text-indigo-500">
-                      <Link to="/single">
-                        Clever Ways to Purchase Extr s from NFT Market
-                      </Link>
-                    </h6>
-                    <p className="font-body text-sm text-blueGray-600 mt-2">
-                      22 July, 2021
-                    </p>
-                  </div>
-                </div>
-                <div className="flex items-center">
-                  <img
-                    className="w-24 h-24 rounded object-cover flex-shrink-0"
-                    src="assets/images/blog/18.jpg"
-                    alt="title"
-                  />
-                  <div className="pl-4">
-                    <h6 className="font-display text-blueGray-900 font-bold transition duration-500 hover:text-indigo-500">
-                      <Link to="/single">
-                        The Revolutionary Functionali Seat &amp; Stroller
-                      </Link>
-                    </h6>
-                    <p className="font-body text-sm text-blueGray-600 mt-2">
-                      22 July, 2021
-                    </p>
-                  </div>
-                </div>
-              </div>
+              <Categories />
+              <Tags />
+              <Popularposts />
             </div>
           </div>
         </div>

@@ -1,9 +1,8 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { list } from "./list";
 
-const Dropdown = ({ dropdown, active, setactive }) => {
-  const [hidden, sethidden] = useState(dropdown);
+const Dropdown = ({  active }) => {
   const [activeItem, setactiveItem] = useState(null);
   const [activeSubItem, setactiveSubItem] = useState(null);
 
@@ -18,7 +17,7 @@ const Dropdown = ({ dropdown, active, setactive }) => {
           <li
             // style={{display:activeItem==li}}
             className={`relative dropdown lg:mr-4 ${
-              activeItem == listitem.id && "active"
+              activeItem === listitem.id && "active"
             }`}
             key={index}
           >
@@ -34,7 +33,7 @@ const Dropdown = ({ dropdown, active, setactive }) => {
                   <span
                     onClick={() =>
                       setactiveItem(
-                        activeItem == listitem.id ? null : listitem.id
+                        activeItem === listitem.id ? null : listitem.id
                       )
                     }
                     className="leading-5 text-2xl text-center bg-blueGray-100 w-6 h-6 absolute right-2 top-4 block lg:hidden toggle"
@@ -46,14 +45,14 @@ const Dropdown = ({ dropdown, active, setactive }) => {
             </Link>
             <ul
               className={` ${
-                activeItem == listitem.id ? "" : "hidden"
+                activeItem === listitem.id ? "" : "hidden"
               }  lg:block bg-white lg:absolute top-full lg:shadow lg:w-44 transition duration-500 submenu `}
             >
               {listitem.submenu.map((subitem, index) => (
                 <li
                   key={index}
                   className={`relative dropdown  ${
-                    activeSubItem == subitem.id && "active"
+                    activeSubItem === subitem.id && "active"
                   }`}
                 >
                   <Link
@@ -68,7 +67,7 @@ const Dropdown = ({ dropdown, active, setactive }) => {
                       <span
                         onClick={() =>
                           setactiveSubItem(
-                            activeSubItem == subitem.id ? null : subitem.id
+                            activeSubItem === subitem.id ? null : subitem.id
                           )
                         }
                         className="leading-5 text-2xl text-center bg-blueGray-100 w-6 h-6 absolute right-2 top-4 block lg:hidden toggle"
@@ -79,7 +78,7 @@ const Dropdown = ({ dropdown, active, setactive }) => {
                   </Link>
                   <ul
                     className={`${
-                      activeSubItem == subitem.id ? "" : "hidden"
+                      activeSubItem === subitem.id ? "" : "hidden"
                     } lg:block bg-white lg:absolute top-0 left-full lg:shadow lg:w-44 transition duration-500 submenu`}
                   >
                     {subitem.submenu.map((superSubItem, index) => (
