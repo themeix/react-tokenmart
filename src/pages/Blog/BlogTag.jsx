@@ -1,7 +1,6 @@
 import React from "react";
 import { useState } from "react";
 import { Helmet } from "react-helmet";
-import { Link } from "react-router-dom";
 import FooterV2 from "../../components/Footer/FooterV2";
 import Header from "../../components/Header/Header";
 import BlogCard from "./BlogCard";
@@ -33,7 +32,7 @@ const BlogTag = () => {
           </div>
 
           <div className="flex justify-center mt-8 lg:mt-14">
-            {num == 9 && (
+            {num === 9 && (
               <button onClick={()=>setnum(20)} className="btn load-more-btn flex items-center text-white font-body font-bold rounded px-6 py-4 transition-all duration-500 bg-gradient-to-tl from-indigo-500 via-purple-500 to-indigo-500 bg-size-200 bg-pos-0 hover:bg-pos-100">
                 Load More{" "}
                 <img

@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Dropdown from "./Dropdown";
-import { list } from "./list";
 
 const Header = () => {
   const [active, setactive] = useState(false);
@@ -13,15 +12,13 @@ const Header = () => {
         setscrolled(true);
       }
     });
-
-    return () => {
-      // window.removeEventListener(listener);
-    };
   }, []);
 
   return (
     <header
-      className={`header-area  absolute w-full top-0 pt-4 pb-10 ${scrolled && "header-sticky"}`}
+      className={`header-area  absolute w-full top-0 pt-4 pb-10 ${
+        scrolled && "header-sticky"
+      }`}
     >
       <div className="container mx-auto relative px-4 z-20">
         <nav className="flex items-center justify-between relative">

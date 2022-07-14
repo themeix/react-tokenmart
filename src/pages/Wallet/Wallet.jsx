@@ -2,10 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import FooterV2 from "../../components/Footer/FooterV2";
 import Header from "../../components/Header/Header";
-import { Fade, Zoom } from "react-reveal";
-import { AiOutlineClose } from "react-icons/ai";
 import WalletItem from "./WalletItem";
-import Modal from "react-modal/lib/components/Modal";
 import ConnectWalletModal from "../../components/Modal/ConnectWalletModal";
 import { wallets } from "./walletdata";
 import { Helmet } from "react-helmet";
@@ -13,15 +10,14 @@ import { Helmet } from "react-helmet";
 const Wallet = () => {
   const [modalOpen, setmodalOpen] = useState(false);
 
-  console.log(modalOpen)
-
+  console.log(modalOpen);
 
   return (
     <div>
       <Helmet>
-                <meta charSet="utf-8" />
-                <title>Wallet || Tokenmart - Largest online marketplace</title>
-            </Helmet>
+        <meta charSet="utf-8" />
+        <title>Wallet || Tokenmart - Largest online marketplace</title>
+      </Helmet>
       <Header />
       {/*  ====================== Hero Section =============================  */}
       <section className="hero-section relative mt-2 pt-32 pb-20 lg:pt-48 lg:pb-32">
