@@ -7,7 +7,7 @@ const ByenowModal = ({ modalOpen, setmodalOpen }) => {
   return (
     <>
       {modalOpen && (
-        <div className="modalContainer">
+        <div className="modalContainer"  >
           <OuterClick
             onOuterClick={(event) => {
               event.preventDefault();
