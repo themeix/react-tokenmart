@@ -190,7 +190,7 @@ const FooterV2 = () => {
       </div>
       <div className="container mx-auto relative px-4 z-10 lg:text-center py-10 xl:py-20">
         <p className="font-body text-sm text-blueGray-600">
-          © <span id="spanYear">2021</span> Tokenmart - All Rights Reserved by{" "}
+          © <span id="spanYear">2022</span> Tokenmart - All Rights Reserved by{" "}
           <Link
             to="/https://themeix.com/"
             className="text-indigo-500 underline-hover"

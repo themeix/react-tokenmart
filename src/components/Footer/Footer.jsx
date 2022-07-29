@@ -218,7 +218,7 @@ const Footer = () => {
         </div>
         <div className="lg:text-center mt-8 lg:mt-14">
           <p className="font-body text-sm text-blueGray-600">
-            © <span id="spanYear">2021</span> Tokenmart - All Rights Reserved by
+            © <span id="spanYear">2022</span> Tokenmart - All Rights Reserved by
             <Link
               to="/https://themeix.com/"
               className="text-indigo-500 underline-hover"

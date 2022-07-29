@@ -1,3 +1,4 @@
+/* eslint-disable */
 import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home/Home";
@@ -31,7 +32,6 @@ import CreatorFeatured from "./pages/CreatorFeatured/CreatorFeatured";
 import Intro from "./pages/Intro/Intro";
 
 function App() {
- 
   return (
     <div className="App">
       <Pointer />

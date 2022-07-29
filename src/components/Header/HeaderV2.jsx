@@ -93,6 +93,7 @@ const HeaderV2 = () => {
                   className="w-4 h-4 flex-shrink-0 mr-2"
                   src="assets/images/wallet-icon.svg"
                   title="title"
+                  alt="walletc-icon"
                 />{" "}
                 Connect Wallet
               </button>
@@ -121,6 +122,7 @@ const HeaderV2 = () => {
                         className="w-4 h-4 flex-shrink-0 cursor-pointer ml-4"
                         src="assets/images/profile-copy.svg"
                         title="title"
+                        alt="profile"
                       />
                     </span>
                   </li>

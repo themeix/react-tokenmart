@@ -6,14 +6,14 @@
   right: 0;
   background: rgba(0, 0, 0, 0.7);
   transition: opacity 0.5s;
-  visibility: hidden;
-  opacity: 0;
+  /* visibility: hidden; */
+  /* opacity: 0; */
   height: 100% !important;
   width: 100% !important;
   margin: 0 auto;
   z-index: 999999999;
-  /* width: 100vw; */
-  /* height: 100vh; */
+  width: 100vw;
+  height: 100vh;
 }
 .modalContainer:target {
   visibility: visible;
@@ -22,3 +22,6 @@
 /* .modalContainer > * {
   z-index: 335 !important;
 } */
+.modalContainer.active ~  *{
+  opacity: 0.5!important;
+}
