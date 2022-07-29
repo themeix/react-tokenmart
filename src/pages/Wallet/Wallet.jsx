@@ -10,8 +10,6 @@ import { Helmet } from "react-helmet";
 const Wallet = () => {
   const [modalOpen, setmodalOpen] = useState(false);
 
-  console.log(modalOpen);
-
   return (
     <div>
       <Helmet>

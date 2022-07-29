@@ -177,7 +177,7 @@ const ItemDetailsV2 = () => {
                   <Timer7 />
                 </div>
               </div>
-              <bitton
+              <button
                 onClick={() => setmodalOpen(true)}
                 href=""
                 className="popup-modal btn inline-block text-xl text-white font-body font-medium rounded py-3 px-8 mb-10 transition-all duration-500 bg-gradient-to-tl from-indigo-500 via-purple-500 to-indigo-500 bg-size-200 bg-pos-0 hover:bg-pos-100"
@@ -188,7 +188,7 @@ const ItemDetailsV2 = () => {
                   alt="title"
                 />{" "}
                 Place a bid
-              </bitton>
+              </button>
 
               <PlaceBidModal
                 modalIsOpen={modalOpen}
