@@ -1,20 +1,10 @@
 import React from "react";
-
 import { AiOutlineClose } from "react-icons/ai";
-import "react-responsive-modal/styles.css";
-import { Modal } from "react-responsive-modal";
+import HyperModal from "react-hyper-modal";
 
 const PlaceBidModal = ({ modalIsOpen, setmodalOpen }) => {
   return (
-    <Modal
-      open={modalIsOpen}
-      onClose={() => setmodalOpen(false)}
-      center
-      classNames={{
-        modalAnimationIn: "zoomIn",
-      }}
-      animationDuration={800}
-    >
+    <HyperModal isOpen={modalIsOpen} requestClose={() => setmodalOpen(false)}>
       <form
         style={{ height: "max-content" }}
         id="popup-modal"
@@ -91,7 +81,7 @@ const PlaceBidModal = ({ modalIsOpen, setmodalOpen }) => {
           Placed a bid
         </button>
       </form>
-    </Modal>
+    </HyperModal>
   );
 };
 

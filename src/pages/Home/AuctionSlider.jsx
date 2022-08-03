@@ -29,8 +29,6 @@ const AuctionSlider = () => {
               speed={1000}
               zoom={true}
               watchOverflow={true}
-              keyboardControl={true}
-              mousewheelControl={true}
               autoplay={true}
               navigation={{
                 nextEl: ".swiper-button-next",

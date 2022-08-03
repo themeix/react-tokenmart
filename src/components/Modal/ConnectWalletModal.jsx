@@ -2,20 +2,12 @@ import React from "react";
 import { AiOutlineClose } from "react-icons/ai";
 
 import { Link } from "react-router-dom";
-import "react-responsive-modal/styles.css";
-import { Modal } from "react-responsive-modal";
+import HyperModal from "react-hyper-modal";
+
 const ConnectWalletModal = ({ modalOpen, setmodalOpen }) => {
   return (
     <>
-      <Modal
-        open={modalOpen}
-        onClose={() => setmodalOpen(false)}
-        center
-        classNames={{
-          modalAnimationIn: "zoomIn",
-        }}
-        animationDuration={800}
-      >
+      <HyperModal isOpen={modalOpen} requestClose={() => setmodalOpen(false)}>
         <div
           style={{ height: "max-content" }}
           className="max-w-sm m-auto bg-white rounded shadow zoom  p-10 fixed inset-0 z-50 "
@@ -43,7 +35,7 @@ const ConnectWalletModal = ({ modalOpen, setmodalOpen }) => {
             Download Now
           </Link>
         </div>
-      </Modal>
+      </HyperModal>
     </>
   );
 };

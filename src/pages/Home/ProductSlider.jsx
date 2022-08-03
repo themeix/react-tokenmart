@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 import { products } from "../Explore/itemdata";
 import ProductItem3 from "../Explore/ProductItem3";
 
-const ProductSlider = ({items,component}) => {
+const ProductSlider = ({ items, component }) => {
   return (
     <div className="relative">
       <div className="swiper-container product-slider">
@@ -20,10 +20,6 @@ const ProductSlider = ({items,component}) => {
           speed={1000}
           zoom={true}
           watchOverflow={true}
-          autoplayDisableOnInteraction={false}
-          paginationClickable={true}
-          keyboardControl={true}
-          mousewheelControl={true}
           autoplay={true}
           navigation={{
             nextEl: ".swiper-button-next",
@@ -47,7 +43,6 @@ const ProductSlider = ({items,component}) => {
         >
           {products.map((product, index) => (
             <SwiperSlide>
-              {" "}
               {`<${component}   key={${index}} item={${product}} />`}
             </SwiperSlide>
           ))}

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import FooterV2 from "../../components/Footer/FooterV2";
 import Header from "../../components/Header/Header";
 import PlaceBidModal from "../../components/Modal/PlaceBidModal";

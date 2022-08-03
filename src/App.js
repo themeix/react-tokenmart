@@ -32,6 +32,7 @@ import CreatorFeatured from "./pages/CreatorFeatured/CreatorFeatured";
 import Intro from "./pages/Intro/Intro";
 import { useEffect } from "react";
 
+
 function App() {
   useEffect(() => {
     console.clear();

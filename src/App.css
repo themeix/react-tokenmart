@@ -22,6 +22,25 @@
 /* .modalContainer > * {
   z-index: 335 !important;
 } */
-.modalContainer.active ~  *{
-  opacity: 0.5!important;
+.modalContainer.active ~ * {
+  opacity: 0.5 !important;
+}
+
+.hm_hyperModalWrapper {
+  background-color: rgba(0, 0, 0, 0.651);
+  z-index: 9999999 !important;
+}
+.hm_hyperModalWrapper .hm_hyperModalContentWrapper {
+  width: max-content !important;
+  height: max-content !important;
+  animation: zoomIn 0.3s ease-in-out !important;
+}
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(0.3);
+  }
+  100% {
+    transform: scale(0.3);
+  }
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import ScrollToTop from "react-scroll-to-top";
 import FooterV2 from "../../../components/Footer/FooterV2";

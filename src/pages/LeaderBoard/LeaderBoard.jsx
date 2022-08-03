@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "../../components/Header/Header";
 import FooterV2 from "../../components/Footer/FooterV2";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import SellerLong from "../../components/vendors/SellerLong";
 import { sellers } from "../../data/sellers";
 
