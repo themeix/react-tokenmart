@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import slugify from "slugify";
 
 const ProductItem = ({ item }) => {
   return (
@@ -24,7 +25,7 @@ const ProductItem = ({ item }) => {
           </span>
         </div>
         <Link
-          to="/item-single"
+          to={`/item-single?${slugify(item.name)}`}
           className="product-meta absolute left-0 right-0 m-auto bottom-24 w-36 block text-white text-center font-body font-medium rounded py-2 px-4 transition-all duration-500 bg-gradient-to-tl from-indigo-500 via-purple-500 to-indigo-500 bg-size-200 bg-pos-0 hover:bg-pos-100"
         >
           <img
@@ -88,7 +89,7 @@ const ProductItem = ({ item }) => {
             </div>
           </div>
           <h3 className="font-display text-xl text-blueGray-900 font-bold transition hover:text-indigo-500">
-            <Link to="/item-single">{item.name} </Link>
+            <Link to={`/item-single?${slugify(item.name)}`}>{item.name} </Link>
           </h3>
         </div>
       </div>

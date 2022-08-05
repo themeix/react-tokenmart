@@ -1,11 +1,15 @@
 import React from "react";
 import { AiOutlineClose } from "react-icons/ai";
-import HyperModal from "react-hyper-modal";
+import Popup from "reactjs-popup";
 
 const ByenowModal = ({ modalOpen, setmodalOpen }) => {
   return (
     <>
-      <HyperModal isOpen={modalOpen} requestClose={() => setmodalOpen(false)}>
+      <Popup
+        open={modalOpen}
+        closeOnDocumentClick
+        onClose={() => setmodalOpen(false)}
+      >
         <div
           id=""
           style={{ height: "max-content" }}
@@ -63,7 +67,7 @@ const ByenowModal = ({ modalOpen, setmodalOpen }) => {
             </button>
           </div>
         </div>
-      </HyperModal>
+      </Popup>
     </>
   );
 };

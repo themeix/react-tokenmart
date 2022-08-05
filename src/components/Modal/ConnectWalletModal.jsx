@@ -1,13 +1,16 @@
 import React from "react";
 import { AiOutlineClose } from "react-icons/ai";
-
 import { Link } from "react-router-dom";
-import HyperModal from "react-hyper-modal";
+import Popup from "reactjs-popup";
 
 const ConnectWalletModal = ({ modalOpen, setmodalOpen }) => {
   return (
     <>
-      <HyperModal isOpen={modalOpen} requestClose={() => setmodalOpen(false)}>
+      <Popup
+        open={modalOpen}
+        closeOnDocumentClick
+        onClose={() => setmodalOpen(false)}
+      >
         <div
           style={{ height: "max-content" }}
           className="max-w-sm m-auto bg-white rounded shadow zoom  p-10 fixed inset-0 z-50 "
@@ -35,7 +38,7 @@ const ConnectWalletModal = ({ modalOpen, setmodalOpen }) => {
             Download Now
           </Link>
         </div>
-      </HyperModal>
+      </Popup>
     </>
   );
 };
