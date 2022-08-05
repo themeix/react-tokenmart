@@ -1,7 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
-import ScrollToTop from "react-scroll-to-top";
 import FooterV2 from "../../../components/Footer/FooterV2";
 import Header from "../../../components/Header/Header";
 import Categories from "./Categories";
@@ -12,7 +11,6 @@ import Tags from "./Tags";
 const BlogDetails = () => {
   return (
     <div>
-      <ScrollToTop smooth />
       <Helmet>
         <meta charSet="utf-8" />
         <title>Blog Details || Tokenmart - Largest online marketplace</title>
@@ -480,8 +478,10 @@ const BlogDetails = () => {
                 </div>
                 <div className="lg:text-right lg:max-w-sm my-4 lg:ml-6">
                   <h3 className="font-display text-xl text-blueGray-900 font-bold transition duration-500 hover:text-indigo-500">
-                    <Link to="/      The Revolutionary Functionality of the Doona Car Seat
-                      &amp; Stroller">
+                    <Link
+                      to="/      The Revolutionary Functionality of the Doona Car Seat
+                      &amp; Stroller"
+                    >
                       The Revolutionary Functionality of the Doona Car Seat
                       &amp; Stroller
                     </Link>
