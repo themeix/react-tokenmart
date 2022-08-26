@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import FooterV2 from "../../components/Footer/FooterV2";
 import HeaderV2 from "../../components/Header/HeaderV2";
@@ -13,9 +13,11 @@ const CreatorPublished = () => {
   return (
     <div>
       <Helmet>
-                <meta charSet="utf-8" />
-                <title>Creator Published|| Tokenmart - Largest online marketplace</title>
-            </Helmet>
+        <meta charSet="utf-8" />
+        <title>
+          Creator Published|| Tokenmart - Largest online marketplace
+        </title>
+      </Helmet>
       <HeaderV2 />
 
       {/*  ====================== Hero Section =============================  */}
@@ -155,24 +157,12 @@ const CreatorPublished = () => {
             </Link>
           </div>
           <div className="product-infinite grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-            {products.slice(0,num).map((item,index)=><ProductItem key={index} item={item} />)}
-           
-          
-          
-         
-          
-       
-           
-        
-           
-           
-          
+            {products.slice(0, num).map((item, index) => (
+              <ProductItem key={index} item={item} />
+            ))}
           </div>
           <div className="flex justify-center mt-8 lg:mt-14">
-            {num === 8 && 
-            <Loadmore  onClick={()=>setnum(14)} />}
-
-           
+            {num === 8 && <Loadmore onClick={() => setnum(14)} />}
           </div>
         </div>
       </section>

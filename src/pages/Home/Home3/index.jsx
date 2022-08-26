@@ -1,5 +1,5 @@
 import React from "react";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import Footer from "../../../components/Footer/Footer";
 import Header from "../../../components/Header/Header";
 import AuctionSlider from "../AuctionSlider";

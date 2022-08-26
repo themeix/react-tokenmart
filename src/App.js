@@ -1,3 +1,4 @@
+/* eslint-disable */
 import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home/Home";
@@ -29,9 +30,12 @@ import LeaderBoard from "./pages/LeaderBoard/LeaderBoard";
 import NotFound from "./pages/404/404";
 import CreatorFeatured from "./pages/CreatorFeatured/CreatorFeatured";
 import Intro from "./pages/Intro/Intro";
+import { useEffect } from "react";
 
 function App() {
- 
+  useEffect(() => {
+    console.clear();
+  }, []);
   return (
     <div className="App">
       <Pointer />
@@ -44,9 +48,12 @@ function App() {
           <Route path="/explore" element={<ExploreV1 />} />
           <Route path="/explore2" element={<ExploreV2 />} />
 
+          {/* Single product Page */}
+
           <Route path="/item-single" element={<ItemDetails />} />
           <Route path="/item-single2" element={<ItemDetailsV2 />} />
           <Route path="/item-single3" element={<ItemDetailsV3 />} />
+
           <Route path="/wallet" element={<Wallet />} />
           <Route path="/create-item" element={<CreateItem />} />
           <Route path="/creator-published" element={<CreatorPublished />} />

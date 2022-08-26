@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import FooterV2 from "../../components/Footer/FooterV2";
 import Header from "../../components/Header/Header";
 import PlaceBidModal from "../../components/Modal/PlaceBidModal";
@@ -11,9 +11,11 @@ const ItemDetailsV2 = () => {
   return (
     <div>
       <Helmet>
-                <meta charSet="utf-8" />
-                <title>Product Details V1 || Tokenmart - Largest online marketplace</title>
-            </Helmet>
+        <meta charSet="utf-8" />
+        <title>
+          Product Details V1 || Tokenmart - Largest online marketplace
+        </title>
+      </Helmet>
       <Header />
       {/*  ====================== Hero Section =============================  */}
       <section className="hero-section relative mt-2 pt-32 pb-20 lg:pt-48 lg:pb-32">
@@ -172,11 +174,11 @@ const ItemDetailsV2 = () => {
                   <h4 className="font-display text-blueGray-900 font-bold">
                     Auction ends in
                   </h4>
-                  <Timer7/> 
+                  <Timer7 />
                 </div>
               </div>
-              <bitton
-              onClick={()=>setmodalOpen(true)}
+              <button
+                onClick={() => setmodalOpen(true)}
                 href=""
                 className="popup-modal btn inline-block text-xl text-white font-body font-medium rounded py-3 px-8 mb-10 transition-all duration-500 bg-gradient-to-tl from-indigo-500 via-purple-500 to-indigo-500 bg-size-200 bg-pos-0 hover:bg-pos-100"
               >
@@ -186,15 +188,14 @@ const ItemDetailsV2 = () => {
                   alt="title"
                 />{" "}
                 Place a bid
-              </bitton>
+              </button>
 
               <PlaceBidModal
                 modalIsOpen={modalOpen}
                 setmodalOpen={setmodalOpen}
               />
 
-          
-            <Tabs/>
+              <Tabs />
             </div>
           </div>
         </div>

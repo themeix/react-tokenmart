@@ -34,14 +34,14 @@ const Timer9 = () => {
 
   return (
     <span className="font-display countdown-time9 text-blueGray-900 font-bold">
-      <span class="ml-2">{days} </span>
-      <span class="mr-2">d</span>
+      <span className="ml-2">{days} </span>
+      <span className="mr-2">d</span>
       <span>{hours} </span>
-      <span class="mr-2">h</span>
+      <span className="mr-2">h</span>
       <span>{minutes} </span>
-      <span class="mr-2">m</span>
+      <span className="mr-2">m</span>
       <span>{seconds} </span>
-      <span class="mr-2">s</span>
+      <span className="mr-2">s</span>
     </span>
   );
 };

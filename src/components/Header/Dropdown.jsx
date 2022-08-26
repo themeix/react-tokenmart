@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { list } from "./list";
 
-const Dropdown = ({  active }) => {
+const Dropdown = ({ active }) => {
   const [activeItem, setactiveItem] = useState(null);
   const [activeSubItem, setactiveSubItem] = useState(null);
 
@@ -109,6 +109,7 @@ const Dropdown = ({  active }) => {
             className="appearance-none bg-transparent border-none w-full text-blueGray-600 mr-3 py-1 px-2 leading-tight focus:outline-none"
             type="text"
             placeholder="Search items"
+            style={{ zIndex: -1 }}
           />
         </div>
       </form>

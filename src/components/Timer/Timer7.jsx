@@ -31,32 +31,32 @@ const Timer7 = () => {
 
   return (
     <div className="font-body  font-semibold leading-4 countdown-time7 grid grid-cols-4 gap-4 text-center my-2">
-      <div class="p-3 flex items-center justify-center border-gradient">
-        <p class="text-blueGray-600 bg-clip-text bg-gradient-to-br from-blue-500 to-purple-500">
-          <span class="font-bold text-blueGray-900">{days}</span>
+      <div className="p-3 flex items-center justify-center border-gradient">
+        <p className="text-blueGray-600 bg-clip-text bg-gradient-to-br from-blue-500 to-purple-500">
+          <span className="font-bold text-blueGray-900">{days}</span>
           <br />
-          <span class="text-sm font-light">Days</span>
+          <span className="text-sm font-light">Days</span>
         </p>
       </div>
-      <div class="p-3 flex items-center justify-center border-gradient">
-        <p class="text-blueGray-600 bg-clip-text bg-gradient-to-br from-blue-500 to-purple-500">
-          <span class="font-bold text-blueGray-900">{hours}</span>
+      <div className="p-3 flex items-center justify-center border-gradient">
+        <p className="text-blueGray-600 bg-clip-text bg-gradient-to-br from-blue-500 to-purple-500">
+          <span className="font-bold text-blueGray-900">{hours}</span>
           <br />
-          <span class="text-sm font-light">Hrs</span>
+          <span className="text-sm font-light">Hrs</span>
         </p>
       </div>
-      <div class="p-3 flex items-center justify-center border-gradient">
-        <p class="text-blueGray-600 bg-clip-text bg-gradient-to-br from-blue-500 to-purple-500">
-          <span class="font-bold text-blueGray-900"> {minutes} </span>
+      <div className="p-3 flex items-center justify-center border-gradient">
+        <p className="text-blueGray-600 bg-clip-text bg-gradient-to-br from-blue-500 to-purple-500">
+          <span className="font-bold text-blueGray-900"> {minutes} </span>
           <br />
-          <span class="text-sm font-light">Min</span>
+          <span className="text-sm font-light">Min</span>
         </p>
       </div>
-      <div class="p-3 flex items-center justify-center border-gradient">
-        <p class="text-blueGray-600 bg-clip-text bg-gradient-to-br from-blue-500 to-purple-500">
-          <span class="font-bold text-blueGray-900">{seconds}</span>
+      <div className="p-3 flex items-center justify-center border-gradient">
+        <p className="text-blueGray-600 bg-clip-text bg-gradient-to-br from-blue-500 to-purple-500">
+          <span className="font-bold text-blueGray-900">{seconds}</span>
           <br />
-          <span class="text-sm font-light">Sec</span>
+          <span className="text-sm font-light">Sec</span>
         </p>
       </div>
     </div>

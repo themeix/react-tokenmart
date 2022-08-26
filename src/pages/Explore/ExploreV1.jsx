@@ -7,7 +7,8 @@ import ExploreTabs from "./ExploreTabs";
 import { products } from "./itemdata";
 import ProductItem from "./ProductItem";
 import $ from "jquery";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
+
 window.jQuery = window.$ = $;
 require("jquery-nice-select");
 const ExploreV1 = () => {

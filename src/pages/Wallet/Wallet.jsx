@@ -5,12 +5,10 @@ import Header from "../../components/Header/Header";
 import WalletItem from "./WalletItem";
 import ConnectWalletModal from "../../components/Modal/ConnectWalletModal";
 import { wallets } from "./walletdata";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 
 const Wallet = () => {
   const [modalOpen, setmodalOpen] = useState(false);
-
-  console.log(modalOpen);
 
   return (
     <div>
